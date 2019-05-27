@@ -1,6 +1,9 @@
 Dead Json
 =======================
-![Dead JSON](https://i.ibb.co/5W9CC88/Free-Sample-By-Wix-1.jpg)
+
+.. image:: https://i.ibb.co/5W9CC88/Free-Sample-By-Wix-1.jpg
+   :target: https://github.com/adityanugraha98/deadjson
+   :alt: PyPI - Status
 
 .. image:: https://img.shields.io/pypi/status/deadjson.svg
    :target: https://pypi.python.org/pypi/deadjson
