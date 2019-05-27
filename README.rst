@@ -39,7 +39,7 @@ Examples
 Initialize
 
 >>> import deadjson
->>> data = deadjson.Util(data="data")
+>>> data = deadjson.Util(data="data",fp=True)
 >>> print(data)
 
 ***************
