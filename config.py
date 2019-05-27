@@ -34,6 +34,9 @@ class Util(dict):
                     del self.waktu
         return json.dumps(self, sort_keys=True, indent=4)
 
+    def __repr__(self):
+        return str(json.dumps(self, sort_keys=True, indent=4))
+
     def __setattr__(self,key,value):
         super().__setitem__(key,self._make(value))
         self.save()
@@ -42,11 +45,14 @@ class Util(dict):
         setattr(self, key, self._make(value))
         self.save()
 
-    def __delattr__(self,key):
-        self.__delitem__(key)
+    def __delattr__(self,attr):
+        self.__delitem__(attr)
         self.save()
     
     def __getattr__(self, attr):
+        return self.get(attr, None)
+    
+    def __getitem__(self, attr):
         return self.get(attr, None)
 
     def _make(self, value):
