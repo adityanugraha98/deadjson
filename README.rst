@@ -5,6 +5,8 @@ Dead Json
    :target: https://github.com/adityanugraha98/deadjson
    :alt: PyPI - Status
 
+=======================
+
 .. image:: https://img.shields.io/pypi/status/deadjson.svg
    :target: https://pypi.python.org/pypi/deadjson
    :alt: PyPI - Status
